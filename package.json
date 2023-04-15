@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && exports .next/** types/** --main App",
     "start": "next start",
     "lint": "next lint"
   },
@@ -29,5 +29,37 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@atomico/exports": "^1.4.2",
+    "@atomico/react": "^2.6.1",
+    "@atomico/site": "^0.6.0",
+    "atomico": "^1.70.0"
+  },
+  "exports": {
+    "./middleware-build-manifest": ".next/server/middleware-build-manifest.js",
+    "./middleware-react-loadable-manifest": ".next/server/middleware-react-loadable-manifest.js",
+    "./next-font-manifest": ".next/server/next-font-manifest.js",
+    "./webpack-api-runtime": ".next/server/webpack-api-runtime.js",
+    "./webpack-runtime": ".next/server/webpack-runtime.js",
+    "./chunks/636": ".next/server/chunks/636.js",
+    "./chunks/785": ".next/server/chunks/785.js",
+    "./pages": ".next/server/pages/index.js",
+    "./pages/_app": ".next/server/pages/_app.js",
+    "./pages/_document": ".next/server/pages/_document.js",
+    "./pages/_error": ".next/server/pages/_error.js",
+    "./pages/api/hello": ".next/server/pages/api/hello.js",
+    "./framework-cda2f1305c3d9424": ".next/static/chunks/framework-cda2f1305c3d9424.js",
+    "./main-164f91e3b1a225f8": ".next/static/chunks/main-164f91e3b1a225f8.js",
+    "./polyfills-c67a75d1b6f99dc8": ".next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
+    "./webpack-8fa1640cc84ba8fe": ".next/static/chunks/webpack-8fa1640cc84ba8fe.js",
+    "./pages/index-d19e1e1c0dedc0c1": ".next/static/chunks/pages/index-d19e1e1c0dedc0c1.js",
+    "./pages/_app-5fbdfbcdfb555d2f": ".next/static/chunks/pages/_app-5fbdfbcdfb555d2f.js",
+    "./pages/_error-54de1933a164a1ff": ".next/static/chunks/pages/_error-54de1933a164a1ff.js",
+    "./_buildManifest": ".next/static/u-HQ609M-MFZssd9wn8sQ/_buildManifest.js",
+    "./_ssgManifest": ".next/static/u-HQ609M-MFZssd9wn8sQ/_ssgManifest.js"
+  },
+  "typesVersions": {
+    "*": {}
   }
 }
