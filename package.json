@@ -38,9 +38,11 @@
     "atomico": "^1.70.0"
   },
   "exports": {
-    "./src/pages/index": "./src/pages/index"
+    "./pages/index": "./src/pages/index"
   },
   "typesVersions": {
-    "*": {}
+    "*": {
+      "pages/index": ["types/pages/index.d.ts"]
+    }
   }
 }

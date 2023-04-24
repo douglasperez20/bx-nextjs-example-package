@@ -2,6 +2,7 @@ import { GetServerSideProps, NextPage } from 'next';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import BlueImage from '@assets/img/blue.jpg';
+import '@styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
