@@ -1,6 +1,6 @@
 {
   "name": "bx-nextjs-example-package",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "This is a example of how create a next package",
   "type": "module",
   "license": "MIT",
@@ -42,7 +42,9 @@
   },
   "typesVersions": {
     "*": {
-      "pages/index": ["types/pages/index.d.ts"]
+      "pages/index": [
+        "types/pages/index.d.ts"
+      ]
     }
   }
 }
