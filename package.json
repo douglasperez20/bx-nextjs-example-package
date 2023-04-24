@@ -1,6 +1,6 @@
 {
   "name": "bx-nextjs-example-package",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "This is a example of how create a next package",
   "license": "MIT",
   "scripts": {
